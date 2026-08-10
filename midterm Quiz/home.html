@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>travGo!/Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <style>
+      .carousel-img {
+        height: 600px;
+        object-fit: cover;
+      }
+      .container img {
+        height: 200px;
+        object-fit: cover;
+      }
+    </style>
+    <!--
+    ================================================== 
+                        NAVIGATION
+    ==================================================
+    -->
+
+    <nav
+      class="navbar bg-primary navbar-expand-lg shadow fixed-top"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">travGo!</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle fw-bold"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Section
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#famous-destinations"
+                    >Famous Destinations</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#home-travel">Home travel</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <button
+                    type="button"
+                    class="dropdown-item"
+                    data-bs-toggle="modal"
+                    data-bs-target="#booking"
+                  >
+                    booking
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--
+    ================================================== 
+                        Carousel 
+    ==================================================
+    -->
+    <div
+      id="carouselAutoplaying "
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner shadow-lg">
+        <div class="carousel-item active">
+          <img
+            src="img/banner1.jpg"
+            class="d-block w-100 carousel-img object-fit-sm-cover border rounded"
+          />
+          <div
+            class="position-absolute top-0 start-0 w-100 h-100"
+            style="
+              background: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.8)
+              );
+            "
+          ></div>
+          <div class="carousel-caption">
+            <h3>United Kingdom</h3>
+            <p>Hay it big ben!!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner2.jpg" class="d-block w-100 carousel-img" />
+          <div
+            class="position-absolute top-0 start-0 w-100 h-100"
+            style="
+              background: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.8)
+              );
+            "
+          ></div>
+          <div class="carousel-caption">
+            <h3>France</h3>
+            <p>Welecome in Paris!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/banner3.webp" class="d-block w-100 carousel-img" />
+          <div
+            class="position-absolute top-0 start-0 w-100 h-100"
+            style="
+              background: linear-gradient(
+                rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.8)
+              );
+            "
+          ></div>
+          <div class="carousel-caption">
+            <h3>Egypt</h3>
+            <p>What to see the pyramids!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    ================================================== 
+                        CARDS
+    ==================================================
+    -->
+
+    <div class="m-5 text-primary" id="famous-destinations">
+      <h1>FAMOUS DESTINATIONS</h1>
+    </div>
+
+    <div class="container">
+      <div class="row flex-nowrap overflow-x-auto gap-3 text-center">
+        <!--  Card 1  -->
+        <div class="card" style="width: 18rem">
+          <img src="img/card1.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <!--  Card 2  -->
+        <div class="card" style="width: 18rem">
+          <img src="img/card2.webp" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <!--  Card 3  -->
+        <div class="card" style="width: 18rem">
+          <img src="img/card3.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <!--  Card 4  -->
+        <div class="card" style="width: 18rem">
+          <img src="img/card4.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <!--  Card 5  -->
+        <div class="card" style="width: 18rem">
+          <img src="img/card5.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <!--  Card 6  -->
+        <div class="card" style="width: 18rem">
+          <img src="img/card6.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <!--  Card 7  -->
+        <div class="card" style="width: 18rem">
+          <img src="img/card7.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+        <!--  Card 8  -->
+        <div class="card" style="width: 18rem">
+          <img src="img/card8.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+    ================================================== 
+                        Home Travel
+    ==================================================
+    -->
+    <div class="m-5 text-primary" id="home-travel">
+      <h1>HOME TRAVEL</h1>
+    </div>
+
+    <div class="accordion m-5" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button show text-light fw-bold fs-4"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+            style="
+              background-image: url(img/hometravel1.jpeg);
+              background-size: cover;
+            "
+          >
+            Boracay
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse p-5"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>This is the first item’s accordion body.</strong> It is
+            shown by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It’s also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+          <input class="btn btn-primary mr-2" type="button" value="see more" />
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed show text-light fw-bold fs-4"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+            style="
+              background-image: url(img/hometravel2.jpeg);
+              background-size: cover;
+            "
+          >
+            Banaue Rice Terraces
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse p-5"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>This is the second item’s accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It’s also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+          <input class="btn btn-primary" type="button" value="see more" />
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button collapsed show text-light fw-bold fs-4"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+            style="
+              background-image: url(img/hometravel3.jpeg);
+              background-size: cover;
+            "
+          >
+            Bohol
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collaps p-5"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>This is the third item’s accordion body.</strong> It is
+            hidden by default, until the collapse plugin adds the appropriate
+            classes that we use to style each element. These classes control the
+            overall appearance, as well as the showing and hiding via CSS
+            transitions. You can modify any of this with custom CSS or
+            overriding our default variables. It’s also worth noting that just
+            about any HTML can go within the <code>.accordion-body</code>,
+            though the transition does limit overflow.
+          </div>
+          <input class="btn btn-primary" type="button" value="see more" />
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center m-5">
+      <div class="spinner-border text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <strong role="status">Loading content...</strong>
+    </div>
+    <!--
+    ================================================== 
+    Home Travel
+    ==================================================
+    -->
+    <div class="modal" tabindex="-1" id="booking">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              class="btn-group"
+              role="group"
+              aria-label="Basic radio toggle button group"
+            >
+              <h6>What type of payment would you like to use?</h6>
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio1"
+                autocomplete="off"
+                checked
+              />
+              <label class="btn btn-outline-primary" for="btnradio1"
+                >Credit Card</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio2"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="btnradio2"
+                >Debit Card</label
+              >
+
+              <input
+                type="radio"
+                class="btn-check"
+                name="btnradio"
+                id="btnradio3"
+                autocomplete="off"
+              />
+              <label class="btn btn-outline-primary" for="btnradio3"
+                >PayPal</label
+              >
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+            
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+              <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                  <img src="..." class="rounded me-2" alt="...">
+                  <strong class="me-auto">Bootstrap</strong>
+                  <small>11 mins ago</small>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                  Hello, world! This is a toast message.
+                </div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
